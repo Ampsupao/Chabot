@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chatbot Nagasaki</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="chat-container">
+    <div class="header">
+      <h1>NAGASAKI - CHATBOT</h1>
+    </div>
+
+    <div id="chat-box" class="chat-box"></div>
+
+    <div class="input-container">
+      <input 
+        id="user-input" 
+        type="text" 
+        placeholder="Escribe tu mensaje..." 
+        onkeypress="if(event.key === 'Enter') sendMessage();"
+      />
+      <button onclick="sendMessage()">Enviar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
